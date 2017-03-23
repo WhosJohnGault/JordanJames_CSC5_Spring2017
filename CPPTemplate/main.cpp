@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
  * Author: James Jordan
- * Created on February 12, 2017, 11:37 AM
- * Purpose:T
+ * Created on MArch 23, 2017, 11:37 AM
+ * Purpose:Brute force compared to summation
  */
 
 //System Libraries Here
@@ -18,12 +18,21 @@ using namespace std;
 
 //Program Execution Begins Here
 int main(int argc, char** argv) {
-//Declare all Variables Here
-  
+//Declare and initialize Variables Here
+int nLoop =1000000;
+float sum=0,frac=0.5f;  //make sure to edit the n value
 //Input or initialize values Here
+for(int i=1;i<=nLoop;i++){
+    sum+=frac;
+}
     
 //Process/Calculations Here
-    
+cout<<"The computed sum of  "
+        <<frac<<"->"<<nLoop<<"times = "<<sum<<endl;
+cout<<" simple multiplication of "
+        <<frac<<"x"<<nLoop<<" = "<<frac*nLoop<<endl;
+cout<<"Error = "<<(frac*nLoop-sum)/(frac*nLoop)*100
+        <<"%"<<endl;
 //Output Located Here
     //Exit
     return 0;
