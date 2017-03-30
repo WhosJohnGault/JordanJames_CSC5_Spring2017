@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=CPP Template
+PROJECTNAME=Savitch_9thed_Chap5_Prob7_CheckYourWeight
 
 # Active Configuration
 DEFAULTCONF=Debug
