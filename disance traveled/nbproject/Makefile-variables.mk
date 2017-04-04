@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=true_cpp_template
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/true_cpp_template
+CND_ARTIFACT_NAME_Debug=disance_traveled
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/disance_traveled
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=truecpptemplate.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/truecpptemplate.tar
+CND_PACKAGE_NAME_Debug=disancetraveled.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/disancetraveled.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=true_cpp_template
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/true_cpp_template
+CND_ARTIFACT_NAME_Release=disance_traveled
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/disance_traveled
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=truecpptemplate.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/truecpptemplate.tar
+CND_PACKAGE_NAME_Release=disancetraveled.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/disancetraveled.tar
 #
 # include compiler specific variables
 #

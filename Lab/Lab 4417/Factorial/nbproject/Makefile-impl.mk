@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=True CPP template
+PROJECTNAME=Factorial
 
 # Active Configuration
 DEFAULTCONF=Debug

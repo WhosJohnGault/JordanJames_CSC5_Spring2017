@@ -7,15 +7,15 @@
 # Macros
 TOP=`pwd`
 CND_PLATFORM=Cygwin-Windows
-CND_CONF=Release
+CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 CND_DLIB_EXT=dll
 NBTMPDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tmp-packaging
 TMPDIRNAME=tmp-packaging
-OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/true_cpp_template
-OUTPUT_BASENAME=true_cpp_template
-PACKAGE_TOP_DIR=truecpptemplate/
+OUTPUT_PATH=${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/disance_traveled
+OUTPUT_BASENAME=disance_traveled
+PACKAGE_TOP_DIR=disancetraveled/
 
 # Functions
 function checkReturnCode
@@ -60,15 +60,15 @@ mkdir -p ${NBTMPDIR}
 
 # Copy files and create directories and links
 cd "${TOP}"
-makeDirectory "${NBTMPDIR}/truecpptemplate/bin"
+makeDirectory "${NBTMPDIR}/disancetraveled/bin"
 copyFileToTmpDir "${OUTPUT_PATH}.exe" "${NBTMPDIR}/${PACKAGE_TOP_DIR}bin/${OUTPUT_BASENAME}.exe" 0755
 
 
 # Generate tar file
 cd "${TOP}"
-rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/truecpptemplate.tar
+rm -f ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/disancetraveled.tar
 cd ${NBTMPDIR}
-tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/truecpptemplate.tar *
+tar -vcf ../../../../${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/package/disancetraveled.tar *
 checkReturnCode
 
 # Cleanup
