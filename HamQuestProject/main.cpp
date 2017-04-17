@@ -19,7 +19,8 @@ using namespace std;
 
 //Program Execution Begins Here
 int main(int argc, char** argv) {
-int combat    
+int combat
+int enemyhp    
 char z; //The Best offense is a great offense, Fight!
 char x; //"Mama raised a coward", Run!
 char c; //"I always wanted to be a rock", Guard!
@@ -43,7 +44,7 @@ char enter;
     cout<<"The kick is a sudden sting and you can't help but wince from the feeling"<<endl;
     
     cout<<"How do you react? "<<input"(you can input z to attack, x to run away, c to gaurd";
-    do while(combat=0)
+    do while(enemyhp>0)
     switch(react){
     'z':cout<<"You muster all the strength in your piggy body to hit your assailant, you dealt no dmg
         cout<<"maybe you should try again?"
