@@ -22,6 +22,7 @@ void combat(char,int );
 int main(int argc, char** argv) {
 char react;
 int enemyhp=2; 
+float maxhp=2;
 char enter;
     
 //prologue/ character introduction sequence
@@ -44,15 +45,38 @@ char enter;
     cout<<"How do you react? "<<input<<"(you can input z to attack, x to run away, c to guard"<<endl;
     
     //first combat encounter
+    if (enemyhp=maxhp){
+        cout<<"The human looks at you, surprised!";
+    }
+    else if (enemyhp>0&&enemyhp<2){
+        cout<<"The human stares at you, making a scary face,they might be hungry";
+    }
+    else if (enemyhp=0){
+            cout<<"The human looks at you, they are fearful";
+    }
+    else{
+        cout<<"The enemy  crumbles to the ground, lifeless";
+    }
+    
     combat(react,enemyhp); //variables used in this prototype
- 
+    
     return 0;
 }
 void combat(char mander,int enemyhp){ //a modular encounter, likely the only encounter
  do{ 
     cin>>mander;
     switch(mander){
-    case 'z':cout<<"You muster all the strength in your piggy body to hit your assailant, you didn't leave any noticeable damage, try again!"<<endl;
+        if(enemyhp=2){
+            cout<<"You feel an ominous presence, prepare for battle!"<<endl;
+                    
+        }
+        else if(enemyhp=1){
+            cout<<"The enemy is slightly wounded, keep it up!"<<endl;
+        }
+        else{
+            cout<<"You won congratulations!"<<endl;
+        }
+    case 'z':cout<<"You muster all the strength in your piggy body to hit your assailant, the enemy has "<<enemyhp<<" remaining"<<endl;
     cout<<"(you can input z to attack, x to run away, c to guard"<<endl;
         enemyhp--;
         break;
@@ -70,7 +94,7 @@ void combat(char mander,int enemyhp){ //a modular encounter, likely the only enc
         cout<<"(you can input z to attack, x to run away, c to guard"<<endl;
         break;
             }        
-    }while(enemyhp>0);    
+    }while(enemyhp>=0);    
     
 }
     
