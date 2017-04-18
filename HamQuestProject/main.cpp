@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Dr. Mark E. Lehr
  * Created on April 14 2017, 8:27 AM
- * Purpose:  Battleship Simulator
+ * Purpose:  Ham Quest tutorial
  */
 
 //System Libraries Here
@@ -44,7 +44,7 @@ char enter;
     cin>>enter;
     cout<<"How do you react? "<<input<<"(you can input z to attack, x to run away, c to guard"<<endl;
     
-    //first combat encounter
+    //first combat encounter,has yet to be completely worked out, will be implemented in version 
     if (enemyhp=maxhp){
         cout<<"The human looks at you, surprised!";
     }
@@ -59,11 +59,26 @@ char enter;
     }
     
     combat(react,enemyhp); //variables used in this prototype
-    
-    return 0;
+    //basic enemy ai whos actions will be determined by their hp and a random seed
+
+
+return 0;
 }
 void combat(char mander,int enemyhp){ //a modular encounter, likely the only encounter
  do{ 
+     do{
+    srand(time(NULL));
+
+int randNum = (rand() % 3) + 1;
+switch(randNum){
+    case '1':cout<<"He tries to attack you"<<endl;
+    break;
+    case '2':cout<<"He attempts to guard"<<endl;
+    break;
+    default:cout<<"He attempts to... run?"<<endl;
+    break;
+}
+}while(enemyhp=0);
     cin>>mander;
     switch(mander){
         if(enemyhp=2){
