@@ -15,7 +15,12 @@
 #include <string>  //string library
 using namespace std;
 
+//Global Constants
+
 //User Libraries Here
+ifstream infile;
+ofstream outfile;
+        
 //Function Prototypes
 void combat(char,int ); //void protype function for tutorial battle
 //Program Execution Begins Here
@@ -62,14 +67,23 @@ std::cin.get(); //this causes the user to prompt the game/program to begin
                 break;
             }
     cin>>enter;        
-    cout<<"Well that was an interesting experience composed of over 100 lines of code"<<endl;        
-    cout<<endl<<input<<setw(5)<<"Thanks for playing, see you in V2.0!";
+    cout<<"Well that was an interesting experience composed of over 100 lines of code..."<<endl;
+    cin>>enter;
+    string line;
+     infile.open("Review.txt");
+    std::ifstream
+   if(!infile){
+       cout<<"Failure to open review program!";
+   }
+    cout<<input<<" Thanks for playing, see you in V2.0!"<<endl;
+    
+   
 return 0;
 }
 void combat(char mander,int enemyhp){ //a modular encounter, likely the only encounter
  do{ 
      do{
-    srand(time(NULL)); //setting a seed 
+    srand(time(0)); //setting a seed 
 
 int randNum = (rand() % 3) + 1; //this will determine what action the enemy takes
 switch(randNum){
@@ -121,6 +135,6 @@ if(enemyhp<2){
     }while(enemyhp>=0);    
     
 }
-    
+   
 
 
