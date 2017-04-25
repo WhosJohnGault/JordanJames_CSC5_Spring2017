@@ -22,14 +22,15 @@ int main(int argc, char** argv) {
 //Declare and initialize Variables Here
     int i;
     int n;
-    n=i+1;
+    n=1;
     cout<<"Please enter an integer that is higher than 1, but less than 50"<<endl;
         cin>>i;
     do{
-        for(i>=1&&i<50; i--;){
-        cout<<setw(n++)<<i<<setw(n++)<<endl<<endl;
+        for(i>1&&i<50; i--;){
+            //for(n=1;n>0&&n<50;n++)
+        cout<<i<<setw(i)<<endl;
     }
-    }while(i>=1&&i<50);
+    }while(i>1||i<50,n!=i);
 //Process/Calculations Here
 
 //Output Located Here
