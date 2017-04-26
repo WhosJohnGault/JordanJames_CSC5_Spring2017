@@ -25,9 +25,13 @@ int main(int argc, char** argv) {
         cout << "Enter a number"<<endl; 
             cin>>a;
 
-    for(int i=0; i<a; i++){ //for loop to spam * as long as it is less than the user input
+    for(int i=0; i<a; i++){//for loop to spam * as long as it is less than the user input
+        if (a !char 48-57){
+            cout<<"?"<<endl;
+        }
         cout << "*";
         }
+          
         cout<<endl;
     
 //Process/Calculations Here
