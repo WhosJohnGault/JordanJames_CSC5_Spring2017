@@ -1,7 +1,7 @@
 /* 
  * File:   main.cpp
  * Author: James Jordan
- * Created on MArch 23, 2017, 11:37 AM
+ * Created on April 27, 2017, 11:37 AM
  * Purpose:Brute force compared to summation
  */
 
@@ -19,6 +19,20 @@ using namespace std;
 //Program Execution Begins Here
 int main(int argc, char** argv) {
 //Declare and initialize Variables Here
+    int cntInc,cntDec;
+    
+//initialize variables
+int n=9;
+
+for(int row=1; row<=n; row++){
+    for(int col=1;col<=n;col++){
+        if(row==col)cout<<n+1-row;
+        else if(row+col==n+1)cout<<row;
+        else cout<<' ';
+    }
+    cntDec--;
+    cout<<endl;
+}
 
     
 //Process/Calculations Here
