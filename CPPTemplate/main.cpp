@@ -1,8 +1,8 @@
 /* 
  * File:   main.cpp
- * Author: James Jordan
- * Created on MArch 23, 2017, 11:37 AM
- * Purpose:Brute force compared to summation
+ * Author: Dr. Mark E. Lehr
+ * Created on July 19, 2016, 9:07 AM
+ * Purpose:  Hello World Template
  */
 
 //System Libraries Here
@@ -18,12 +18,15 @@ using namespace std;
 
 //Program Execution Begins Here
 int main(int argc, char** argv) {
-//Declare and initialize Variables Here
-
+    //Declare all Variables Here
     
-//Process/Calculations Here
+    //Input or initialize values Here
+    
+    //Process/Calculations Here
+    
+    //Output Located Here
+    cout<<"Hello World"<<endl;
 
-//Output Located Here
     //Exit
     return 0;
 }
