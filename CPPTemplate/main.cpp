@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     //Process/Calculations Here
     
     //Output Located Here
-    cout<<"Hello World"<<endl;
+
 
     //Exit
     return 0;
