@@ -1,5 +1,7 @@
  #include <iostream>
 using namespace std;
+
+
 void draw(int,int);
 int main()
 {
@@ -11,11 +13,9 @@ int main()
 
 void draw(int x, int y)
 {
-    int cmnd;
-    /*char a=x-1;
-    char s=y-1;
-    char d=x+1;
-    char w=y+1; */
+   
+    
+    
     for(int i = 1; i < 7; i++) 
         if (i < 0)
             cout<<" "<<i;
@@ -23,7 +23,7 @@ void draw(int x, int y)
             cout<<"  "<<i;
     cout<<endl;
 
-    for(int i = 1; i < 7; i++)
+    for(int i = 0; i < 6; i++)
         {
             cout<<(char)(i + 49);
             for(int j = 1; j < 7; j++)
@@ -33,9 +33,16 @@ void draw(int x, int y)
                 cout<<" . ";
 
             cout<<(char)(i + 48)<<endl;}
-            /*cout<<"Press a to move left,s to move down, d to move right, w to move up"<<endl;
-            cin>>cmnd; */
-        
-}
+    cout<<"press a to move west, w to move north,d to move east or s to move south"<<endl;
+    char move;
+    cin>>move;
+    switch(move){
+        case'a':(x-1,y);
+        case's':(x,y-1);
+        case'd':(x+1,y);
+        case'w':(x,y+1);
 
+    // cin<<move;
+}     
+}
 

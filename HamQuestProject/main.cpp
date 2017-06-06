@@ -71,11 +71,7 @@ std::cin.get(); //this causes the user to prompt the game/program to begin
     cin>>enter;
     string line;
      infile.open("Review.txt");
-    std::ifstream
-   if(!infile){
-       cout<<"Failure to open review program!";
-   }
-    cout<<input<<" Thanks for playing, see you in V2.0!"<<endl;
+ 
     
    
 return 0;
